@@ -23,7 +23,7 @@ function(r) {
    LEVELS={
 	basico:{W:20,H:20},
         intermedio:{W:30,H:40},
-        avanzado:{W:50,H:6},
+        avanzado:{W:50,H:60},
         locura:{W:70,H:80},
 	mitico:{W:103,H:103}
     },
