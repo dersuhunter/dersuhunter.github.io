@@ -24,7 +24,7 @@ function(r) {
    LEVELS={
 	basico:{W: alpha ? 20 : 15,H: alpha ? 15 : 20},
         intermedio:{W: alpha ? 40 : 30,H: alpha ? 30 : 40},
-        avanzado:{W: alpha ? 60 : 40,H: alpha ? 60 : 40},
+        avanzado:{W: alpha ? 60 : 40,H: alpha ? 40 : 60},
         locura:{W: alpha ? 80 : 60,H: alpha ? 60 : 80},
 	mitico:{W: alpha ? 100 : 75,H: alpha ? 75 : 100}
     },
