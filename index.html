@@ -1,22 +1,31 @@
 
+
 <html>
 <header>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/seedrandom.min.js"></script>
     <script src="js/maze.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </header>
 
-<body onload="init();">
+<body onload="init()">
 	<center class="levels">
 		<form name="levelform">
-		    <input type="radio" id="id_level_1" name="nivel" value="basico" />
+		    <input type="radio" id="id_level_1" name="nivel" value="basico"  checked="checked" />
 		    <label for="id_level_1"> basico </label> |
-		    <input type="radio" id="id_level_2" name="nivel" value="intermedio" checked="checked" />
-		    <label for="id_level_2"> intermedio </label> |
+		    <input type="radio" id="id_level_2" name="nivel" value="intermedio"/>
+		    <label for="id_level_2" > intermedio </label> |
 		    <input type="radio" id="id_level_3" name="nivel" value="avanzado" />
 		    <label for="id_level_3"> avanzado </label> |
 		    <input type="radio" id="id_level_4" name="nivel" value="locura" />
-		    <label for="id_level_4"> leyenda </label>
+		    <label for="id_level_4"> experto </label> <br><br>locura: {
+		    <input type="radio" id="id_level_5" name="nivel" value="mitico" />
+		    <label for="id_level_5"> nivel I </label> |
+		    <input type="radio" id="id_level_6" name="nivel" value="god" />
+		    <label for="id_level_6"> nivel II </label> |
+		    <label for="id_level_7" onclick="alert('primero resuelve el nivel II')"> nivel III </label>
+			}
 		</form>
 	</center>
 	<div id="inner" class="inner">
@@ -34,8 +43,10 @@
 	  <source src="http://streaming.radionomy.com/JamendoLounge" type="audio/mpeg">
 	</audio>
 	<br>
-	<p>Algo que programé en esta cuarentena para pasar el rato, el nombre <b>dersuhunter</b> hace referencia a la pelicula DERSU UZALA (1975) te la recomiendo!
-<br><br> { Eduin HS 2020 }  </p>
-
+	<div align="center">
+		<p>Algo que programé en esta cuarentena para pasar el rato, el nombre <b>dersuhunter</b> hace referencia a la pelicula DERSU UZALA (1975) te la recomiendo!
+		<br>{ Eduin HS 2020 }
+		</p>
+	</div>
 </body>
 </html>
