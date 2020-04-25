@@ -92,121 +92,87 @@ function(r) {
             D=(r,t,e=p)=>{R.m(r+s,t+p),R.a(r+s,t,e,o,l)},
             H=(r,t,e=p)=>{R.m(r+x,t+s),R.a(r+s,t+s,e,l,n)},
 
-    // │ │
-    // │ │
             Y=(r,t)=>{
 		R.v(r,t,p)
 		R.v(r,t,x)
 		},
-    // ───
-    // ───
             $=(r,t)=>{
 		R.h(r,t,p),
 		R.h(r,t,x)
 		},
-    // │ │
-    // └─┘
             W=(r,t)=>{
 		R.m(r+x,t,m),
 		R.l(r+x, t+x),
 		R.l(r+p, t+x),
 		R.l(r+d,t)
 		},
-    // ┌─┐
-    // │ │
             V=(r,t)=>{
 		R.m(r+x,t+s,m)
 		R.l(r+x, t+p),
 		R.l(r+p, t+p),
 		R.l(r+p,t+s)
 		},
-    // ┌──
-    // └──
-
             j=(r,t)=>{
 		R.m(r+s,t+x),
 		R.l(r+d,t+x);
 		R.l(r+p,t+p),
 		R.l(r+s,t+p)
 		},
-    // ──┐
-    // ──┘
             T=(r,t)=>{
 		R.m(r,t+x),
 		R.l(r+x,t+x),
 		R.l(r+x,t+p),
 		R.l(r,t+p)
 		},
-    //  │ └
-    //  └──
             q=(r,t)=>{
 		D(r,t),
 		R.m(r+s,t+x),
 		R.a(r+x,t+p,y,o,l),
 		R.l(r+p,t)
 		},
-    // ┌──
-    // │ ┌
             F=(r,t)=>{
 		H(r,t),
 		R.m(r+s,t+p),
 		R.a(r+x,t+x,y,n,l,0),
 		R.l(r+p,t+s)
 		},
-    //  ┘ │
-    //  ──┘
             J=(r,t)=>{
 		P(r,t),
 		R.m(r+x,t),
 		R.a(r+p,t+p,y,0,o),
 		R.l(r,t+x)
 		},
-    // ──┐
-    // ┐ │
             N=(r,t)=>{
 		_(r,t),
 		R.m(r,t+p),
 		R.a(r+p,t+x,y,n,a),
 		R.l(r+x,t+s)
 		},
-    // │ └
-    // │ ┌
             Q=(r,t)=>{
 		R.v(r,t,p),
 		D(r,t),
 		H(r,t)
 		},
-     // ┘ │
-     // ┐ │
             X=(r,t)=>{
 		R.v(r,t,x),
 		P(r,t),
 		_(r,t)
 		},
-
-    // ┘ └
-    // ───
             tr=(r,t)=>{
 		R.h(r,t,x),
 		P(r,t),
 		D(r,t)
 		},
-    // ───
-    // ┐ ┌
             er=(r,t)=>{
 		R.h(r,t,p),
 		_(r,t),H(r,t)
 		},
-    // ┘ └
-    // ┐ ┌
             lr=(r,t)=>{
 		P(r,t),
 		_(r,t),
 		D(r,t),
 		H(r,t)
 		},
-    // ┤ ├
-    // ┤ ├
             or=(r,t)=>{
 		R.v(r,t,p),
 		R.v(r,t,x),
@@ -215,8 +181,6 @@ function(r) {
 		R.mh(r+s,t+p,x-s),
 		R.mh(r+s,t+x,x-s)
 		},
-    // ┴─┴
-    // ┬─┬
             ar=(r,t)=>{
 		R.h(r,t,p),
 		R.h(r,t,x),
