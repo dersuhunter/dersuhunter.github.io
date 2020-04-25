@@ -22,11 +22,11 @@ function(r) {
 
    alpha=document.documentElement.clientWidth > document.documentElement.clientHeight,
    LEVELS={
-	basico:{W: alpha ? 20 : 15,H: alpha ? 15 : 23},
-        intermedio:{W: alpha ? 40 : 30,H: alpha ? 30 : 45},
-        avanzado:{W: alpha ? 50 : 40,H: alpha ? 40 : 55},
-        locura:{W: alpha ? 60 : 50,H: alpha ? 50 : 65},
-	mitico:{W: alpha ? 100 : 70,H: alpha ? 70 : 110}
+	basico:{W: alpha ? 20 : 15,H: alpha ? 15 : 232,
+        intermedio:{W: alpha ? 40 : 30,H: alpha ? 30 : 42},
+        avanzado:{W: alpha ? 50 : 40,H: alpha ? 40 : 52},
+        locura:{W: alpha ? 60 : 50,H: alpha ? 50 : 62},
+	mitico:{W: alpha ? 100 : 70,H: alpha ? 70 : 102}
     },
     draw_maze=r=>{
 	const t=r.length,
