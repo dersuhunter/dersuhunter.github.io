@@ -20,11 +20,13 @@ function(r) {
         t.searchParams.set("id", r), Math.seedrandom(r), window.history.replaceState(null, "Maze", t.href)
     },
 
+   alpha=document.documentElement.clientWidth > document.documentElement.clientHeight,
    LEVELS={
-	basico:{W:20,H:30},
-        intermedio:{W:30,H:45},
-        avanzado:{W:50,H:75},
-        locura:{W:70,H:105}
+	basico:{W: alpha ? 20 : 15,H: alpha ? 15 : 20},
+        intermedio:{W: alpha ? 40 : 30,H: alpha ? 30 : 40},
+        avanzado:{W: alpha ? 50 : 40,H: alpha ? 40 : 50},
+        locura:{W: alpha ? 60 : 50,H: alpha ? 50 : 60},
+	mitico:{W: alpha ? 100 : 70,H: alpha ? 70 : 100}
     },
     draw_maze=r=>{
 	const t=r.length,
@@ -33,7 +35,7 @@ function(r) {
 		o=l/2,
 		n=3*l/2,
 		a=2*l,
-		s=800/e,
+		s=888/e,
 		d=.25*s,
 		u=.5,
 
