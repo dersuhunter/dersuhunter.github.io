@@ -21,12 +21,11 @@ function(r) {
     },
 
    LEVELS={
-	basico:{W:15,H:15},
-        intermedio:{W:20,H:20},
-        avanzado:{W:30,H:30},
-        locura:{W:50,H:50},
-	mitico:{W:80,H:80},
-	god:{W:100,H:100}
+	basico:{W:20,H:20},
+        intermedio:{W:30,H:30},
+        avanzado:{W:40,H:40},
+        locura:{W:60,H:60},
+	mitico:{W:90,H:133}
     },
     draw_maze=r=>{
 	const t=r.length,
