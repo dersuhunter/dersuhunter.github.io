@@ -11,10 +11,10 @@ function(r) {
     },
 
     LEVELS={
-        basico:{W:14,H:21},
-        intermedio:{W:21,H:29},
-        avanzado:{W:29,H:41},
-        locura:{W:41,H:80}
+        basico:{W:10,H:15},
+        intermedio:{W:15,H:20},
+        avanzado:{W:25,H:40},
+        locura:{W:50,H:80}
     },
     draw_maze=r=>{
 	const t=r.length,
@@ -23,7 +23,7 @@ function(r) {
 		o=l/2,
 		n=3*l/2,
 		a=2*l,
-		s=1024/e,
+		s=800/e,
 		d=.25*s,
 		u=.5,
 
