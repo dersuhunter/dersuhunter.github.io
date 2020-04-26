@@ -265,13 +265,74 @@ function(r) {
                 return l.has(s) && o.has(d) ? (vr=n,yr=a,Ar.length > 1 && Ar.slice(-2)[0][0] == vr && Ar.slice(-2)[0][1] == yr ? Ar=Ar.slice(0,Ar.length-1) :Ar.push([vr,yr]),vr == e-1 && 0 == yr ? (console.log("false 3"),!1) :mr.has(d) ? (console.log("false 4",r,d.name,ur[r][d.name]),ur[r][d.name]) :(console.log("false 5"),!1)) :(console.log("false 2"),!1)},
 	    
             Sr=valor=>{
+		 var greetings = [
+			      " El mundo que hemos creado es un proceso de nuestro pensamiento. No se puede cambiar sin cambiar nuestra forma de pensar.",
+			      " Debo estar dispuesto a renunciar a lo que soy con el fin de convertirse en lo que seré.",
+			      " Hay una fuerza motriz más poderosa que el vapor, la electricidad y la energía atómica: la voluntad.",
+			      " Existen dos formas de ver la vida: una es creyendo que nada es un milagro, la otra es creyendo que todo es un milagro.",
+			      " En medio de la dificultad reside la oportunidad.",
+			      " En medio de la dificultad reside la oportunidad.",
+			      " Todos sabemos que la luz viaja más rápido que el sonido. Es por eso que algunas personas parecen brillantes hasta que las escuchamos hablar.",
+			      " La medida de la inteligencia es la capacidad de cambiar.",
+			      " El tiempo es una ilusión.",
+			      " No es posible mantener la paz usando la fuerza; que sólo se puede lograr mediante la comprensión.",
+			      " Somos arquitectos de nuestro propio destino.",
+			      " El mundo no está amenazado por las malas personas, sino por aquellos que permiten la maldad.",
+			      " La creatividad es la inteligencia divirtiéndose.",
+			      " Lo importante es no dejar de cuestionar. La curiosidad tiene su propia razón de existir.",
+			      " La búsqueda de la verdad y la belleza es una actividad que nos permite seguir siendo niños toda la vida.",
+			      " Sólo aquellos que intentan el absurdo pueden lograr lo imposible.",
+			      " Si no puedes controlar lo que está pasando, intenta controlar cómo reacciones a la situación. Ahí es donde está el poder.",
+			      " Se mide la inteligencia de un individuo por la cantidad de incertidumbres que es capaz de soportar ",
+			      " Alguien inteligente aprende de la experiencia de los demás",
+			      " Sólo la inteligencia se examina a sí misma",
+			      " Las inteligencias poco capaces se interesan en lo extraordinario; las inteligencias poderosas, en las cosas ordinarias",
+			      " El tiempo es el único capital de las personas que no tienen más que su inteligencia por fortuna",
+			      " Los locos abren los caminos que más tarde recorren los sabios",
+			      " No es que el genio se adelante un siglo a su tiempo, es la humanidad la que se encuentra cien años por detrás de él",
+			      " Cuando no comprendemos una cosa, es preciso declararla absurda o superior a nuestra inteligencia, y generalmente, se adopta la primera determinación",
+			      " En ciertos momentos, la única forma de tener razón es perdiéndola",
+			      " Así como el hierro se oxida por falta de uso, así también la inactividad destruye el intelecto",
+			      " Así como el hierro se oxida por falta de uso, así también la inactividad destruye el intelecto",
+			      " La imaginación es más importante que el conocimiento. El conocimiento es limitado y la imaginación circunda el mundo",
+			      " La curiosidad es una de las más permanentes y seguras características de una vigorosa inteligencia",
+			      " El cerebro humano es como una máquina de acuñar monedas. Si echas en ella metal impuro, obtendrás escoria; si echas oro, obtendrás moneda de ley",
+			      " Vale más saber alguna cosa de todo, que saberlo todo de una sola cosa",
+			      " Nada es más peligroso que una idea cuando no se tiene más que una",
+			      " Cuando las expectativas de uno se reducen a cero, uno aprecia realmente todo lo que tiene",
+			      " Inteligencia y belleza: gran rareza ",
+			      " La obligación primaria de la inteligencia es desconfiar de ella",
+			      " Cuando se comprende que la condición humana es la imperfección del entendimiento, ya no resulta vergonzoso equivocarse, sino persistir en los errores",
+			      " Lo que sabemos es una gota de agua; lo que ignoramos es el océano",
+			      " Se necesita un gran conocimiento sólo para darse cuenta de la enormidad de la propia ignorancia",
+			      " La sabiduría nos llega cuando ya no nos sirve de nada",
+			      " El insensato que reconoce su insensatez es un sabio. Pero un insensato que se cree sabio es, en verdad, un insensato ",
+			      " Lo que quiere el sabio, lo busca en sí mismo; el vulgo, lo busca en los demás",
+			      " El que parece sabio, entre los tontos, parece tonto entre los sabios",
+			      " Inteligencia: conócete, acéptate, supérate",
+			      " La mayoría prefiere pagar por entretenerse que por instruirse",
+			      " La mayoría prefiere pagar por entretenerse que por instruirse",
+			      " La mayoría prefiere pagar por entretenerse que por instruirse",
+			      " La creatividad requiere tener el valor de desprenderse de las certezas",
+			      " Cuando hables, procura que tus palabras sean mejores que el silencio",
+			      " Ser un intelectual genera un montón de preguntas y ninguna respuesta",
+			      " Mis ideas son de una lógica indiscutible; lo único que me hace dudar es que no hayan sido aplicadas anteriormente"				
+			];
+		var greeting_id = Math.floor(Math.random() * greetings.length);    
+		    
+		    
 		let r=valor;
 		let t=r;
                 for (; t;) t=Lr(t);
                 if (U.svg="",U.dots="",k.svg="",Ar.length > 1)
                     for (let r=0; r < Ar.length; r++) {
                         const [t,e]=Ar[r];
-                        if (r == Ar.length-1) {const [l,o]=Ar[r-1],n=xr(t-l,e-o);cr[n](t*s,e*s),U.dot(t*s,e*s,s/5)
+                        if (r == Ar.length-1) {
+				const [l,o]=Ar[r-1],n=xr(t-l,e-o);
+				cr[n](t*s,e*s),U.dot(t*s,e*s,s/5);
+				if (t*s==E[E.length-1] && e*s==b[0]){
+					alert('¡Felicitaciones lo lograste!'+'\n'+greetings[greeting_id])
+				}
                         }
 			else {
                             const [l,o]=Ar[r+1];
