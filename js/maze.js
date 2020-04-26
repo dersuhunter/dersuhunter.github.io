@@ -403,5 +403,7 @@ function(r) {
         const e = r.searchParams.get("id");
         null===e ? change_id() :Math.seedrandom(e);
 	const l = create_maze(LEVELS[t].W, LEVELS[t].H);
+	alert('Para una mejor experiencia usa auricuales, ya que la musica de fondo esta acompañada por una fuente de sonido que simula las ondas ALFA (Terapia Binaural)');
 	draw_maze(l)
+	  
     };
