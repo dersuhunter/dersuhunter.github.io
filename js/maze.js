@@ -22,7 +22,7 @@ function(r) {
 
    alpha=document.documentElement.clientWidth > document.documentElement.clientHeight,
    LEVELS={
-	bb:{W: alpha ? 6 : 4,H: alpha ? 4 : 6},
+	bb:{W: alpha ? 8 : 5,H: alpha ? 5 : 8},
 	basico:{W: alpha ? 20 : 15,H: alpha ? 15 : 20},
         intermedio:{W: alpha ? 40 : 30,H: alpha ? 30 : 40},
         avanzado:{W: alpha ? 60 : 45,H: alpha ? 45 : 60},
