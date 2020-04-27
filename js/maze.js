@@ -25,8 +25,8 @@ function(r) {
 	basico:{W: alpha ? 20 : 15,H: alpha ? 15 : 20},
         intermedio:{W: alpha ? 40 : 30,H: alpha ? 30 : 40},
         avanzado:{W: alpha ? 60 : 45,H: alpha ? 45 : 60},
-        locura:{W: alpha ? 80 : 60,H: alpha ? 60 : 80},
-	mitico:{W: alpha ? 100 : 75,H: alpha ? 75 : 100}
+        experto:{W: alpha ? 80 : 60,H: alpha ? 60 : 80},
+	leyenda:{W: alpha ? 100 : 75,H: alpha ? 75 : 100}
     },
     draw_maze=r=>{
 	const t=r.length,
