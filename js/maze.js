@@ -396,7 +396,7 @@ function(r) {
                 let n="";
                 for (const r of t.split("")) n+= Ur[r];
                 return n
-            })(new URL(window.location).searchParams.get("ruta",r));
+            })(new URL(window.location).searchParams.get("ruta"));
 	
         for (let r of Pr.split("")) Lr(Rr[r]);
         Sr(null),document.body.onkeyup=(r=>{
