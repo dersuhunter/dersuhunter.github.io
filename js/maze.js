@@ -331,7 +331,7 @@ function(r) {
 				cr[n](t*s,e*s),U.dot(t*s,e*s,s/5);
 				document.getElementById("link").value =  window.location;
 				if (t*s==E[E.length-1] && e*s==b[0]){
-				     document.getElementById("mensaje").innerHTML = '¡Felicitaciones lo lograste! '+'\n'+greetings[greeting_id]
+				     document.getElementById("mensaje").innerHTML = '¡Felicitaciones lo lograste! '
 				}
                         }
 			else {
