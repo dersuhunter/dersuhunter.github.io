@@ -375,6 +375,7 @@ function(r) {
 	    
             const e=create_maze(LEVELS[r].W,LEVELS[r].H);
             draw_maze(e);
+	    document.getElementById("link").value =  window.location;
 	    document.getElementById("mensaje").innerHTML = ''
         };
 
@@ -466,6 +467,7 @@ function(r) {
         null===e ? change_id() :Math.seedrandom(e);
 	const l = create_maze(LEVELS[t].W, LEVELS[t].H);
 	alert('Para una mejor experiencia usa auriculares: la música de fondo esta acompañada por una fuente de sonido diferente en cada auricular que estimula las ondas ALFA (Terapia Binaural)');
+        document.getElementById("link").value =  window.location;
 	draw_maze(l)
 	  
     };
