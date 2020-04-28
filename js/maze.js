@@ -330,7 +330,7 @@ function(r) {
 				const [l,o]=Ar[r-1],n=xr(t-l,e-o);
 				cr[n](t*s,e*s),U.dot(t*s,e*s,s/5);
 				if (t*s==E[E.length-1] && e*s==b[0]){
-					alert('¡Felicitaciones lo lograste!'+'\n'+greetings[greeting_id])
+				     document.getElementById("mensaje").innerHTML = '¡Felicitaciones lo lograste! '+'\n'+greetings[greeting_id]
 				}
                         }
 			else {
