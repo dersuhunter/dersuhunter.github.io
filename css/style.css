@@ -11,6 +11,9 @@ div {
   vertical-align: middle;
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 a {
   display: inline-block;
   border-radius: 50%;
