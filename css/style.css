@@ -11,14 +11,15 @@ div {
   vertical-align: middle;
 }
 
-a:link, a:visited, a:active {
-    text-decoration:none;
-}
 a {
   display: inline-block;
   border-radius: 50%;
+  color: #000;
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 a:hover .left, a:hover .top, a:hover .bottom, a:hover .right{
   border: 0.5em solid #333;
 }
