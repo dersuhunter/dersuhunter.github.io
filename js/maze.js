@@ -17,7 +17,7 @@ function(r) {
     change_id = ()=>{
         const r = uuidv4();
         let t = new URL(window.location);
-        t.searchParams.set("ruta",""),t.searchParams.set("id", r), Math.seedrandom(r), window.history.replaceState(null, "Maze", t.href)
+        t.searchParams.set("id", r), Math.seedrandom(r), window.history.replaceState(null, "Maze", t.href)
     },
 
    alpha=document.documentElement.clientWidth > document.documentElement.clientHeight,
@@ -420,8 +420,7 @@ function(r) {
                     for (const r of t.split("")) n == r && a < 9 ? a+= 1 :(a > 1 && (o+= a),a=1,o+= n,n=r);
                     return a > 1 && (o+= a),o+= n
                 })(t),
-                o=new URL(window.location);
-            o.searchParams.set("ruta",l),window.history.replaceState({},"Maze",o.href)
+                o=new URL(window.location);o.searchParams.set("ruta",l),window.history.replaceState(null,"Maze",o.href)
         })
     },
     create_maze=(r,t)=>{
