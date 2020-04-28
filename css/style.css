@@ -17,12 +17,12 @@ a {
 }
 
 a:hover .left, a:hover .top, a:hover .bottom, a:hover .right{
-  border: 0.5em solid #008f39;
+  border: 0.5em solid #333;
 }
 
 a:hover .left:after, a:hover .top:after, a:hover .bottom:after, a:hover .right:after {
-  border-top: 0.5em solid #008f39;
-  border-right: 0.5em solid #008f39;
+  border-top: 0.5em solid #333;
+  border-right: 0.5em solid #333;
 }
 
 .levels input[type="radio"] {display: none;}
