@@ -7,6 +7,8 @@
     <script src="js/maze.js" type="text/javascript" charset="utf-8"></script>
 	
 	<style>
+		
+	#link{ background:#333; padding:10px;color:#000}
 
 	#color{
 		width: 400px; height:30px;
@@ -54,6 +56,7 @@
 	</center>
 	<div id="inner" class="inner">
 		<div id="mensaje"></div>
+		<input type="text" id='link' size='50'><button onclick="copyLink()">Copiar Laberinto</button>
 		<svg id="maze" width="100" height="100" stroke-width="2" fill-opacity="0"></svg>
 	</div>
 
@@ -79,6 +82,12 @@
 <script>
 const bgchange=(id)=>{
 	document.body.style.background=document.getElementById(id).innerHTML;
+}
+function copyLink() {
+  var copyText = document.getElementById("link");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
 }
 </script>
 </body>
