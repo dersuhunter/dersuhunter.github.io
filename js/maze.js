@@ -421,7 +421,7 @@ function(r) {
                     return a > 1 && (o+= a),o+= n
                 })(t),
                 o=new URL(window.location);
-            o.searchParams.set("ruta",l),window.history.replaceState(null,"Maze",o.href)
+            o.searchParams.set("ruta",l),window.history.replaceState({},"Maze",o.href)
         })
     },
     create_maze=(r,t)=>{
