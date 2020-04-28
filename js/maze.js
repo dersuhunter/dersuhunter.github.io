@@ -463,7 +463,7 @@ function(r) {
         const e = r.searchParams.get("id");
         null===e ? change_id() :Math.seedrandom(e);
 	const l = create_maze(LEVELS[t].W, LEVELS[t].H);
-	//alert('Para una mejor experiencia usa auriculares: la música de fondo esta acompañada por una fuente de sonido diferente en cada auricular que estimula las ondas ALFA (Terapia Binaural)');
+	alert('Para una mejor experiencia usa auriculares: la música de fondo esta acompañada por una fuente de sonido diferente en cada auricular que estimula las ondas ALFA (Terapia Binaural)');
 	draw_maze(l)
 	  
     };
