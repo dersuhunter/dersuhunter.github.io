@@ -61,7 +61,8 @@ function(r) {
 
 		b=r.map((r,t)=>s*t), 
 		E=r[0].map((r,t)=>s*t);
-		var color= ['#000', '#008f39', "#0080FF", "#FF0000", "#9933FF", "#800000","#FF00FF"]; 
+		//var color= ['#000', '#008f39', "#0080FF", "#FF0000", "#9933FF", "#800000","#FF00FF"]; 
+	   	var color= ['#000'];
 		const randomcolor = color[Math.floor(Math.random() * color.length)];
 
         class z{ 
