@@ -373,7 +373,8 @@ function(r) {
             t.searchParams.set("nivel",r),t.searchParams.set("ruta",""),window.history.replaceState(null,"Maze",t.href);
 	    
             const e=create_maze(LEVELS[r].W,LEVELS[r].H);
-            draw_maze(e)
+            draw_maze(e);
+	    document.getElementById("mensaje").innerHTML = ''
         };
 
         const Rr={
