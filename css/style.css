@@ -33,7 +33,7 @@ a:hover .left:after, a:hover .top:after, a:hover .bottom:after, a:hover .right:a
     color: #000;
     cursor: pointer;
 }
-.levels input[type="radio"]:checked+label {color: #008f39;}
+.levels input[type="radio"]:checked+label {font-weight: bold;}
 
 .left {
   display: inline-block;
