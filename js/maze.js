@@ -17,7 +17,7 @@ function(r) {
     change_id = ()=>{
         const r = uuidv4();
         let t = new URL(window.location);
-        t.searchParams.set("id", r), Math.seedrandom(r), window.history.replaceState(null, "Maze", t.href)
+        t.searchParams.set("ruta",""),t.searchParams.set("id", r), Math.seedrandom(r), window.history.replaceState(null, "Maze", t.href)
     },
 
    alpha=document.documentElement.clientWidth > document.documentElement.clientHeight,
