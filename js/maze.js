@@ -455,7 +455,7 @@ function(r) {
                 for (let t=1; t < r-2; t+= 2) A[e][t] !== i && A[e][t] !== h || y.push([e,t]);
             if (y.length > 0) {m(y);const [r,t]=y[0];A[r][t]=c}
             return A
-        })(r,t,.5)
+        })(r,t,Math.random())
     },
 
     init=()=>{
