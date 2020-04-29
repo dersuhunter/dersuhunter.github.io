@@ -366,12 +366,12 @@ function(r) {
 
 
         const zr=document.levelform.nivel;
-	var nivelrandom= ['basico','intermedio','avanzado','intermedio','avanzado','experto']; 
-	const randomnivel = nivelrandom[Math.floor(Math.random() * nivelrandom.length)];
+	//var nivelrandom= ['basico','intermedio','avanzado','intermedio','avanzado','experto']; 
+	//const randomnivel = nivelrandom[Math.floor(Math.random() * nivelrandom.length)];
 	    
         for (let r=0; r < zr.length; r++) zr[r].onclick=function() {
-            //const r=this.value;
-	    const r=randomnivel;
+            const r=this.value;
+	    //const r=randomnivel;
             change_id();
             let t=new URL(window.location);
             t.searchParams.set("nivel",r),t.searchParams.set("ruta",""),window.history.replaceState(null,"Maze",t.href);
