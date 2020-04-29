@@ -434,6 +434,10 @@ function(r) {
 
         let w=new Set, f=new Set;
         const g=(r,t)=>f[[r.x,r.y]]===f[[t.x,t.y]], p=(r,t)=>{const e=f[[r.x,r.y]],l=f[[t.x,t.y]];w[e].add(l); const o=w[l];w[e]=new Set([...w[e],...o]),w[l]=new Set,w[e].forEach(r=>{f[r]=e})};
+	
+	var complex= [0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,0.09,0.08,0.07,0.06,0.05,0.04,0.03,0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]; 
+	const randomcomplex = complex[Math.floor(Math.random() * complex.length)];
+	    
 
         return ((r,t,a)=>{
             const A=[...Array(t)].map(()=>Array(r).fill(0)), x=[...Array(t)].map((t,e)=>[...Array(r)].map((r,t)=>new class { constructor(r,t) {this.x=r,this.y=t,w[[r,t]]=new Set,f[[r,t]]=[r,t]}}(t,e)));
@@ -455,7 +459,7 @@ function(r) {
                 for (let t=1; t < r-2; t+= 2) A[e][t] !== i && A[e][t] !== h || y.push([e,t]);
             if (y.length > 0) {m(y);const [r,t]=y[0];A[r][t]=c}
             return A
-        })(r,t,Math.random())
+        })(r,t,randomcomplex)
     },
 
     init=()=>{
