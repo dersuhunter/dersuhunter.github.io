@@ -98,7 +98,7 @@ function(r) {
 		v(r,t,e) {this.ml(r+e,t,r+e,t+s)}
         	}
 
-        let R=new z("#000000",1.5,"1.0"), U=new z(randomcolor,3,"1.0"), k=new z(randomcolor,3,"0.1");
+        let R=new z("#000000",1.3,"1.0"), U=new z(randomcolor,3,"1.0"), k=new z(randomcolor,3,"0.1");
 
         const 
 	    P=(r,t,e=p)=>{R.m(r+p,t),R.a(r,t,e,0,o)},
