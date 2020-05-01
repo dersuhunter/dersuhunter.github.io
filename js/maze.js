@@ -378,8 +378,8 @@ function(r) {
             const e=create_maze(LEVELS[r].W,LEVELS[r].H);
             draw_maze(e);
 	    document.getElementById("link").value =  window.location;
-	    document.getElementById("mensaje").innerHTML = ''
-	    document.getElementById("nivel").innerHTML=r;
+	    document.getElementById("mensaje").innerHTML = '';
+	    document.getElementById("nivel").innerHTML=r
 
         };
 
