@@ -367,9 +367,7 @@ function(r) {
 
         const zr=document.levelform.nivel;
 	var nivelrandom= ['basico','intermedio','avanzado','experto','leyenda','intermedio']; 
-	const randomnivel = nivelrandom[Math.floor(Math.random() * nivelrandom.length)];
-        document.getElementById("nivel").innerHTML=randomnivel
-	    
+	const randomnivel = nivelrandom[Math.floor(Math.random() * nivelrandom.length)];	    
         for (let r=0; r < zr.length; r++) zr[r].onclick=function() {
             //const r=this.value;
 	    const r=randomnivel;
@@ -381,6 +379,8 @@ function(r) {
             draw_maze(e);
 	    document.getElementById("link").value =  window.location;
 	    document.getElementById("mensaje").innerHTML = ''
+	    document.getElementById("nivel").innerHTML=r;
+
         };
 
         const Rr={
