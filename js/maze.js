@@ -366,7 +366,7 @@ function(r) {
 
 
         const zr=document.levelform.nivel;
-	var nivelrandom= ['basico','intermedio','avanzado','intermedio','avanzado','experto']; 
+	var nivelrandom= ['basico','intermedio','avanzado','experto','leyenda','intermedio']; 
 	const randomnivel = nivelrandom[Math.floor(Math.random() * nivelrandom.length)];
 	    
         for (let r=0; r < zr.length; r++) zr[r].onclick=function() {
